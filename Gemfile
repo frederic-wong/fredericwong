@@ -2,6 +2,8 @@
 
 source 'https://rubygems.org'
 
+ruby '3.0.1'
+
 gem 'bootsnap', require: false
 gem 'jbuilder'
 gem 'pg'
