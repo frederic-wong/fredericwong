@@ -1,0 +1,37 @@
+AllCops:
+  SuggestExtensions: false
+  Exclude:
+    - node_modules/**/*
+    - bin/**/*
+    - lib/tasks/cucumber.rake
+  NewCops: enable 
+Style/Documentation:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Layout/HeredocIndentation:
+  Exclude:
+    - lib/tasks/default.rake
+Layout/LineLength:
+  Exclude:
+    - config/initializers/simple_form.rb
+    - config/initializers/simple_form_bootstrap.rb
+    - db/seeds.rb
+    - db/schema.rb
+Metrics/BlockLength:
+  Exclude:
+    - config/initializers/simple_form_bootstrap.rb
+    - db/schema.rb
+    - spec/controllers/businesses_controller_spec.rb
+Style/NumericLiterals:
+  Exclude:
+    - db/schema.rb
+Style/StringLiterals:
+  Exclude:
+    - db/schema.rb
+Style/WordArray:
+  Exclude:
+    - db/schema.rb
+Layout/EmptyLinesAroundBlockBody:
+  Exclude:
+    - db/schema.rb
