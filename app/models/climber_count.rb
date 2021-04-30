@@ -1,0 +1,2 @@
+class ClimberCount < ApplicationRecord
+end

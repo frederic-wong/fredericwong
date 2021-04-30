@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   root 'welcome#index'
 
   resources :welcome, only: %i[index]
+  resources :climber_count, only: %i[index]
 end

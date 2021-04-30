@@ -1,0 +1,14 @@
+.container
+  h1 Avid Climber Count
+
+  .card-body
+    .row
+      .col-md-8
+        table.table.table-borderless
+          tr
+            th Climbers
+            th Time
+          - @climber_count.each do |climber|
+            tr
+              td = climber.climber
+              td = climber.created_at

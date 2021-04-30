@@ -5,6 +5,7 @@ source 'https://rubygems.org'
 ruby '3.0.1'
 
 gem 'bootsnap', require: false
+gem 'httparty'
 gem 'jbuilder'
 gem 'pg'
 gem 'puma'

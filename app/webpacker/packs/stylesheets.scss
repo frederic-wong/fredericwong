@@ -4,6 +4,35 @@ $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
 @import "~@fortawesome/fontawesome-free/scss/solid";
 @import "~@fortawesome/fontawesome-free/scss/regular";
 
-@import "~bootswatch/dist/sketchy/variables";
+@import "~bootswatch/dist/minty/variables";
 @import "~bootstrap/scss/bootstrap";
-@import "~bootswatch/dist/sketchy/bootswatch";
+@import "~bootswatch/dist/minty/bootswatch";
+
+.background {
+  min-height: 100vh;
+  padding-bottom: 5%;
+}
+
+.cut-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.footer {
+  background-color: rgba(255,255,255,0.8);
+  height: 5%;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+.box select {
+  padding: 11.5px;
+  border: none;
+  font-size: 20px;
+  outline: none;
+}
