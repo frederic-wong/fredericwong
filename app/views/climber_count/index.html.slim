@@ -10,5 +10,5 @@
             th Time
           - @climber_count.each do |climber|
             tr
-              td = climber.climber
-              td = climber.created_at
+              td = climber&.climber
+              td = climber&.created_at
