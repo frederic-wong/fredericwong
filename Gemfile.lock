@@ -76,6 +76,7 @@ GEM
       rack-test (>= 0.6.3)
       regexp_parser (>= 1.5, < 3.0)
       xpath (~> 3.2)
+    chartkick (4.0.3)
     concurrent-ruby (1.1.8)
     crass (1.0.6)
     cucumber (5.3.0)
@@ -326,6 +327,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap
   byebug
+  chartkick
   cucumber-rails
   database_cleaner
   factory_bot_rails

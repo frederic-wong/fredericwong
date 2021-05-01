@@ -14,3 +14,4 @@ require("@rails/ujs").start()
 require("@rails/activestorage").start()
 
 import 'bootstrap/dist/js/bootstrap'
+import "chartkick/chart.js"
