@@ -9,5 +9,5 @@
 
   .row
     .col-12
-      = line_chart [{name: "Climbers", data: ClimberCount.pluck(:created_at,:climber)}]
+      = line_chart @graph_data, max: 70
 

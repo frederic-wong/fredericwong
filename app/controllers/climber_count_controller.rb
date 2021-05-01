@@ -2,7 +2,7 @@
 
 class ClimberCountController < ApplicationController
   def index
-    @climber_count = ClimberCount.all
+    @graph_data = [{name: "Climbers", data: ClimberCount.pluck(:created_at,:climber)}]
     @current_climber_count = ClimberCount.last
     @color = define_color(@current_climber_count.climber)
   end
