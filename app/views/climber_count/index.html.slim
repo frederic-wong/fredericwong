@@ -9,7 +9,7 @@
 
   .row
     .col-12
-      = line_chart @graph_data,
+      = area_chart @graph_data,
                    max: 70,
                    xmin: Date.today.beginning_of_day,
                    xmax: Date.today.end_of_day,
@@ -17,7 +17,7 @@
                    xtitle: "Climbers for #{Date.today}"
   .row
     .col-12
-      = line_chart @graph_data,
+      = area_chart @graph_data,
                    max: 70,
                    xmin: Date.today.beginning_of_week,
                    xmax: Date.today.end_of_week,
