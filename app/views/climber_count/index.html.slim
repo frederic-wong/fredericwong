@@ -1,14 +1,9 @@
 .container
   h1 Avid Climber Count
 
-  .card-body
-    .row
-      .col-md-8
-        table.table.table-borderless
-          tr
-            th Climbers
-            th Time
-          - @climber_count.each do |climber|
-            tr
-              td = climber&.climber
-              td = climber&.created_at
+  .row.justify-content-center
+    .col-6
+      .jumbotron style='background-color: #{@color}'
+        .display-4.text-center style='color: black'
+          = @current_climber_count.climber
+

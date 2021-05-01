@@ -1,5 +1,5 @@
-task :fetch_avid_climbers => :environment do
-  puts "Fetching Avid Climbers"
+task fetch_avid_climbers: :environment do
+  puts 'Fetching Avid Climbers'
   AvidScraper.go
-  puts "done."
+  puts 'done.'
 end
