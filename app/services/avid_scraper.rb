@@ -1,13 +1,12 @@
 require 'httparty'
 
-
 class AvidScraper
   def initialize
-    @weekend_open = (Time.parse "10:00")
-    @weekend_close = (Time.parse "18:00")
+    @weekend_open = (Time.parse '10:00')
+    @weekend_close = (Time.parse '18:00')
 
-    @weekday_open = (Time.parse "12:00")
-    @weekday_close = (Time.parse "21:30")
+    @weekday_open = (Time.parse '12:00')
+    @weekday_close = (Time.parse '21:30')
 
     @time = Time.now
   end
@@ -37,12 +36,10 @@ class AvidScraper
   def during_weekday_opening
     if @time.saturday? || @time.sunday?
       false
+    elsif (@time >= @weekday_open) && (@time <= @weekday_close)
+      true
     else
-      if (@time >= @weekday_open) && (@time <= @weekday_close)
-        true
-      else
-        false
-      end
+      false
     end
   end
 end
