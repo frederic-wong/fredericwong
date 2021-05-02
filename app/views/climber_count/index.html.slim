@@ -1,26 +1,20 @@
 .container
-  h1 Avid Climber Count
-
-  .row.justify-content-center
-    .col-6
-      .jumbotron style='background-color: #{@color}'
-        .display-4.text-center style='color: black'
-          = @current_climber_count.climber
-
-  .row
+  .row.p-3
     .col-12
-      = area_chart @graph_data,
-                   max: 70,
-                   xmin: Date.today.beginning_of_day.strftime('%Y-%m-%d'),
-                   xmax: Date.today.end_of_day.strftime('%Y-%m-%d'),
-                   legend: false,
-                   xtitle: "Climbers for #{Date.today}"
-  .row
-    .col-12
-      = area_chart @graph_data,
-                   max: 70,
-                   xmin: Date.today.beginning_of_week.strftime('%Y-%m-%d'),
-                   xmax: Date.today.end_of_week.strftime('%Y-%m-%d'),
-                   legend: false,
-                   xtitle: "Climbers for #{Date.today.beginning_of_week} to #{Date.today.end_of_week}"
+      .card
+        .card-header
+          h2 Avid Climber Count
+        .card-body
+          p Climber Count to keep track how many people are bouldering at Ipswich Avid Climbing gym
+  
 
+  .row.p-3
+    .col-12
+      .card
+        .row.p-3
+          .col-4
+            .jumbotron style='background-color: #{@color}'
+              .display-1.text-center
+                = @current_climber_count.climber
+          .col-8
+            = area_chart @graph_data, legend: false, xtitle: "Climbers for #{Date.today}"
