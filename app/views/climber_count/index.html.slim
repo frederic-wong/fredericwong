@@ -11,16 +11,16 @@
     .col-12
       = area_chart @graph_data,
                    max: 70,
-                   xmin: Date.today.beginning_of_day,
-                   xmax: Date.today.end_of_day,
+                   xmin: Date.today.beginning_of_day.strftime('%Y-%m-%d'),
+                   xmax: Date.today.end_of_day.strftime('%Y-%m-%d'),
                    legend: false,
                    xtitle: "Climbers for #{Date.today}"
   .row
     .col-12
       = area_chart @graph_data,
                    max: 70,
-                   xmin: Date.today.beginning_of_week,
-                   xmax: Date.today.end_of_week,
+                   xmin: Date.today.beginning_of_week.strftime('%Y-%m-%d'),
+                   xmax: Date.today.end_of_week.strftime('%Y-%m-%d'),
                    legend: false,
                    xtitle: "Climbers for #{Date.today.beginning_of_week} to #{Date.today.end_of_week}"
 
