@@ -2,10 +2,10 @@ require 'httparty'
 
 class AvidScraper
   def initialize
-    @weekend_open = (Time.parse '9:30')
+    @weekend_open = (Time.parse '8:30')
     @weekend_close = (Time.parse '18:30')
 
-    @weekday_open = (Time.parse '11:30')
+    @weekday_open = (Time.parse '10:30')
     @weekday_close = (Time.parse '22:00')
 
     @time = Time.now

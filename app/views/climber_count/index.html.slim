@@ -17,4 +17,4 @@
               .display-1.text-center
                 = @current_climber_count.climber
           .col-8
-            = area_chart @graph_data, legend: false, xtitle: "Climbers for #{Date.today}"
+            = area_chart @graph_data, legend: false, xtitle: "Climbers for #{Date.today}", points: false
