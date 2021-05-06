@@ -1,0 +1,19 @@
+.container
+  .row.p-3
+    .col-12
+      .card
+        .card-header
+          h2 The Gym Counter
+        .card-body
+          p The Gym counter to see how many people are at the gym
+
+  .row.p-3
+    .col-12
+      .card
+        .row.p-3
+          .col-4
+            .jumbotron style='background-color: #{@color}'
+              .display-1.text-center
+                = @current_gym_count.gymer
+          .col-8
+            = area_chart @graph_data, legend: false, xtitle: "Number of people at the gym", points: false

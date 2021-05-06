@@ -1,0 +1,2 @@
+class TheGymCount < ApplicationRecord
+end
