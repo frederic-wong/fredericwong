@@ -23,11 +23,7 @@ class AvidScraper
 
   def during_weekend_opening
     if @time.saturday? || @time.sunday?
-      if (@time >= @weekend_open) && (@time <= @weekend_close)
-        true
-      else
-        false
-      end
+      (@time >= @weekend_open) && (@time <= @weekend_close)
     else
       false
     end
@@ -36,10 +32,8 @@ class AvidScraper
   def during_weekday_opening
     if @time.saturday? || @time.sunday?
       false
-    elsif (@time >= @weekday_open) && (@time <= @weekday_close)
-      true
     else
-      false
+      (@time >= @weekday_open) && (@time <= @weekday_close)
     end
   end
 end
