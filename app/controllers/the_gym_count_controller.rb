@@ -2,7 +2,7 @@
 
 class TheGymCountController < ApplicationController
   def index
-    @graph_data = [{ name: 'Gym goers', data: TheGymCount.pluck(:last_updated, :gymer) }]
+    @graph_data = [{ name: 'Gym goers', data: TheGymCount.pluck(:created_at, :gymer) }]
     @current_gym_count = TheGymCount.last
     @color = define_color(@current_gym_count.gymer)
   end
