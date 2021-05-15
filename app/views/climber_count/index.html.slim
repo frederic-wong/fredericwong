@@ -16,6 +16,10 @@
             .jumbotron style='background-color: #{@color}'
               .display-1.text-center
                 = @current_climber_count.climber
+                - if @arrow == 'up'
+                  .fas.fa-arrow-up
+                - elsif @arrow == 'down'
+                  .fas.fa-arrow-down
           .col-8
             = area_chart @graph_data, legend: false,
                                       points: false,
