@@ -9,3 +9,7 @@ task fetch_the_gym_gymers: :environment do
   TheGymScraper.go
   puts 'done.'
 end
+
+task clean_database: :environment do
+  DatabaseCleaner.go
+end
