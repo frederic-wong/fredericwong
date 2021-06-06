@@ -11,5 +11,5 @@ task fetch_the_gym_gymers: :environment do
 end
 
 task clean_database: :environment do
-  DatabaseCleaner.go
+  DatabaseWiper.go
 end
