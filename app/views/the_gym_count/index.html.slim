@@ -12,9 +12,9 @@
       .card
         .row.p-3
           .col-4
-            .jumbotron style='background-color: #{@color}'
+            .jumbotron style='background-color: #{define_color(@current_gym_count)}'
               .display-1.text-center
-                = @current_gym_count.gymer
+                = @current_gym_count
           .col-8
             = area_chart @graph_data, legend: false,
                                       points: false

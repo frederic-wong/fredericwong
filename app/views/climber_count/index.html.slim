@@ -6,16 +6,15 @@
           h2 Avid Climber Count
         .card-body
           p Climber Count to keep track how many people are bouldering at Ipswich Avid Climbing gym
-  
 
   .row.p-3
     .col-12
       .card
         .row.p-3
           .col-4
-            .jumbotron style='background-color: #{@color}'
+            .jumbotron style='background-color: #{define_color(@current_climber_count)}'
               .display-1.text-center
-                = @current_climber_count.climber
+                = @current_climber_count
           .col-8
             = area_chart @graph_data, legend: false,
                                       points: false,

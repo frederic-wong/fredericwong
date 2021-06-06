@@ -2,19 +2,19 @@
 
 describe ClimberCountController do
   describe 'GET Index' do
-    let!(:climbers) { create :climber_count, created_at: Date.today }
+    let!(:climbers) { create :climber_count, created_at: Time.zone.today }
     let(:graph_data) do
       {
-        name: "Climbers",
+        name: 'Climbers',
         data: [
-          [ Date.today, climbers.climber ]
+          [Time.zone.today, climbers.climber]
         ]
       }
     end
-    
+
     it 'should assign the number of climbers' do
       get :index
-      expect(assigns('current_climber_count')).to eq climbers
+      expect(assigns('current_climber_count')).to eq climbers.climber
     end
 
     it 'should assign the graph data' do
