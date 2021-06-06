@@ -16,6 +16,7 @@
               .display-1.text-center
                 = @current_climber_count
           .col-8
-            = area_chart @graph_data, legend: false,
-                                      points: false,
-                                      max: 70
+            = area_chart @daily_graph_data, legend: false, points: false, max: 70
+        .row.p-3
+          .col-12
+            = area_chart @weekly_graph_data, legend: false, points: false
