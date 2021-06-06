@@ -1,6 +1,6 @@
 task fetch_avid_climbers: :environment do
   puts 'Fetching Avid Climbers'
-  AvidScraper.new.go
+  AvidScraper.go
   puts 'done.'
 end
 
