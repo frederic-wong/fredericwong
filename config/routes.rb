@@ -6,5 +6,4 @@ Rails.application.routes.draw do
 
   resources :welcome, only: %i[index]
   resources :climber_count, only: %i[index]
-  resources :the_gym_count, only: %i[index]
 end
