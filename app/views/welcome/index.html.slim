@@ -1,30 +1,3 @@
-/ .container-fluid
-/   .row.p-3
-/     .col-12
-/       .card
-/         .card-body
-/           .row
-/             .col-8
-/               .card-title
-/                 h2 Hi, I'm Frederic Wong
-/               .card-text
-/                 h3 My work
-/                 p
-/                   | I currently work as a Software Engineer at Simply Business, 
-/                   | where I create services for insurers to help our customers get the 
-/                   | best quote possible. 
-/                 p
-/                   | I used to work as a Devops Software Engineering Professional at BT 
-/                   | for 2.5 years, where I create Ruby on Rails applications used by 
-/                   | the BT operations team to monitor the network in the UK!
-/                 h3 My hobbies
-/                 p
-/                   | I am deeply passionate about passing on knowledge to the team, 
-/                   | as well as creating simple solutions that our customers love and trust.
-/                 p
-/                   | If you catch me outside of work, I am a bouldering enthusiast. I 
-/                   | started in 2019, but so far I am absolutely loving it.
-
 header class="masthead bg-primary text-white text-center"
   .container.d-flex.align-items-center.flex-column
     .masthead-avatar.mb-5
@@ -35,4 +8,7 @@ header class="masthead bg-primary text-white text-center"
       .divider-custom-icon
         i class="fas fa-star"
       .divider-custom-line
-    p class="masthead-subheading font-weight-light mb-0" Software Engineer - Coach
+    p class="masthead-subheading font-weight-light mb-0" Software Engineer
+
+= render 'portfolio'
+= render 'about'
