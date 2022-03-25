@@ -143,8 +143,6 @@ GEM
       multi_xml (>= 0.5.2)
     i18n (1.8.10)
       concurrent-ruby (~> 1.0)
-    jbuilder (2.11.2)
-      activesupport (>= 5.0.0)
     listen (3.5.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -183,8 +181,6 @@ GEM
       nio4r (~> 2.0)
     racc (1.5.2)
     rack (2.2.3)
-    rack-proxy (0.6.5)
-      rack
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rails (6.1.3.1)
@@ -222,10 +218,6 @@ GEM
     rake-n-bake (3.1.2)
       rake (>= 11)
       term-ansicolor (~> 1.3)
-    ransack (2.4.2)
-      activerecord (>= 5.2.4)
-      activesupport (>= 5.2.4)
-      i18n
     rb-fsevent (0.10.4)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
@@ -267,7 +259,6 @@ GEM
       rack (>= 1.1)
       rubocop (>= 0.90.0, < 2.0)
     ruby-progressbar (1.11.0)
-    semantic_range (3.0.0)
     shoulda-matchers (4.5.1)
       activesupport (>= 4.2.0)
     simple_form (5.1.0)
@@ -315,11 +306,6 @@ GEM
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
       hashdiff (>= 0.4.0, < 2.0.0)
-    webpacker (5.2.1)
-      activesupport (>= 5.2)
-      rack-proxy (>= 0.6.1)
-      railties (>= 5.2)
-      semantic_range (>= 2.3.0)
     websocket-driver (0.7.3)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
@@ -340,14 +326,12 @@ DEPENDENCIES
   factory_bot_rails
   faker
   httparty
-  jbuilder
   listen
   pg
   puma
   rails
   rails-controller-testing
   rake-n-bake
-  ransack
   rspec-rails
   rubocop
   rubocop-performance
@@ -357,10 +341,9 @@ DEPENDENCIES
   simplecov
   slim
   slim_lint
-  tzinfo-data
+  sprockets-rails
   web-console
   webmock
-  webpacker
 
 RUBY VERSION
    ruby 3.0.1p64

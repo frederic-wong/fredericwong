@@ -7,16 +7,14 @@ ruby '3.0.1'
 gem 'bootsnap', require: false
 gem 'chartkick'
 gem 'httparty'
-gem 'jbuilder'
 gem 'pg'
 gem 'puma'
 gem 'rails'
 gem 'rake-n-bake'
-gem 'ransack'
 gem 'simple_form'
 gem 'slim'
 gem 'slim_lint'
-gem 'webpacker'
+gem 'sprockets-rails'
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
@@ -41,5 +39,3 @@ group :test do
   gem 'simplecov', require: false
   gem 'webmock'
 end
-
-gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]

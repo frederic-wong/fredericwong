@@ -37,5 +37,7 @@ Rails.application.configure do
 
   config.assets.quiet = true
 
+  config.assets.prefix = "/dev-assets"
+
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 end

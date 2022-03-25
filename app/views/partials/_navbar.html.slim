@@ -1,5 +1,9 @@
-nav.navbar.navbar-expand-sm.navbar-dark.bg-primary
-  a.navbar-brand href="/" Frederic Wong
-  ul.navbar-nav.mr-auto
-    li.nav-item
-      = link_to 'Avid Monitoring', climber_count_index_path, class: 'nav-link'
+header.fixed-top
+.container.d-flex.align-items-center.justify-content-between
+  nav.navbar id="navbar"
+    ul
+      li.nav-link.scrollto.active
+        =link_to 'Home', root_path
+      li.nav-link.scrollto.active
+        = link_to 'Avid Monitoring', climber_count_index_path
+    i.bi.bi-list.mobile-nav-toggle

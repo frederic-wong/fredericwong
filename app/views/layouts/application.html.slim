@@ -1,11 +1,17 @@
 doctype html
 html lang="en"
-  meta http-equiv="x-ua-compatible" content="IE=Edge"
   head
+    meta content="width=device-width, initial-scale=1.0" name="viewport"
     title Frederic Wong
-    = stylesheet_pack_tag 'stylesheets'
-    = javascript_pack_tag 'application'
+
+    = stylesheet_link_tag "bootstrap.min.css"
+    = stylesheet_link_tag "bootstrap-icons.css"
+    = stylesheet_link_tag "glightbox.min.css"
+    = stylesheet_link_tag "swiper-bundle.min.css"
+
+    = stylesheet_link_tag "style.css", media: "all"
     = csrf_meta_tags
+
 
   .image-background
     .background
@@ -13,5 +19,4 @@ html lang="en"
         = render 'partials/navbar'
 
         main.mt-5 role="main"
-          = render 'partials/flash'
           = yield
