@@ -1,7 +1,7 @@
 doctype html
 html lang="en"
-  meta http-equiv="x-ua-compatible" content="IE=Edge"
   head
+    meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"
     title Frederic Wong
     = stylesheet_pack_tag 'stylesheets'
     = javascript_pack_tag 'application'
@@ -9,9 +9,8 @@ html lang="en"
 
   .image-background
     .background
-      body
+      body id='page-top'
         = render 'partials/navbar'
 
         main.mt-5 role="main"
-          = render 'partials/flash'
           = yield
