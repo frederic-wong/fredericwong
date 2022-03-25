@@ -1,10 +1,17 @@
 nav.navbar.navbar-expand-lg.bg-secondary.text-uppercase.fixed-top id="mainNav"
   .container
-    a.navbar-brand href="/" Home
-    button.navbar-toggler.text-uppercase.font-weight-bold.bg-primary.text-white.rounded type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" 
-      | Menu  
+    a.navbar-brand href="welcome" Home
+    button.navbar-toggler.text-uppercase.font-weight-bold.bg-primary.text-white.rounded {
+      type="button" data-toggle="collapse"
+      data-target="#navbarResponsive" aria-controls="navbarResponsive"
+      aria-expanded="false" aria-label="Toggle navigation" }
+      | Menu
       i class="fas fa-bars"
     .collapse.navbar-collapse id="navbarResponsive"
       ul class="navbar-nav ms-auto"
+        li class="nav-item mx-0 mx-lg-1"
+          a class="nav-link py-3 px-0 px-lg-3 rounded" href="welcome#portfolio" Portfolio
+        li class="nav-item mx-0 mx-lg-1"
+          a class="nav-link py-3 px-0 px-lg-3 rounded" href="welcome#about" About
         li class="nav-item mx-0 mx-lg-1"
           a class="nav-link py-3 px-0 px-lg-3 rounded" href="climber_count#index" Avid Counter

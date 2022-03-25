@@ -1,0 +1,21 @@
+section class="page-section mb-0" id="dailyGraph"
+  .container
+    h2 class="page-section-heading text-center text-uppercase" Daily data
+    .divider-custom
+      .divider-custom-line
+      .divider-custom-icon
+        i class="fas fa-star"
+      .divider-custom-line
+    .row
+      = area_chart @daily_graph_data, legend: false, points: false, max: 70
+
+section class="page-section bg-primary text-white mb-0" id="weeklyGraph"
+  .container
+    h2 class="page-section-heading text-center text-uppercase text-white" Weekly data
+    .divider-custom.divider-light
+      .divider-custom-line
+      .divider-custom-icon
+        i class="fas fa-star"
+      .divider-custom-line
+    .row
+      = area_chart @weekly_graph_data, legend: false, points: false

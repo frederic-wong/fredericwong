@@ -1,22 +1,12 @@
-.container-fluid
-  .row.p-3
-    .col-12
-      .card
-        .card-header
-          h2 Avid Climber Count
-        .card-body
-          p Climber Count to keep track how many people are bouldering at Ipswich Avid Climbing gym
+header class="masthead text-white text-center" style='background-color: #{define_color(@current_climber_count)}'
+  .container.d-flex.align-items-center.flex-column
+    h1 class="masthead-heading text-uppercase mb-0" Avid Climber Count
+    .divider-custom.divider-light
+      .divider-custom-line
+      .divider-custom-icon
+        i class="fas fa-star"
+      .divider-custom-line
+    .display-1.text-center style="font-size: 1000%"
+      = @current_climber_count
 
-  .row.p-3
-    .col-12
-      .card
-        .row.p-3
-          .col-4
-            .jumbotron style='background-color: #{define_color(@current_climber_count)}'
-              .display-1.text-center
-                = @current_climber_count
-          .col-8
-            = area_chart @daily_graph_data, legend: false, points: false, max: 70
-        .row.p-3
-          .col-12
-            = area_chart @weekly_graph_data, legend: false, points: false
+= render 'graphs'
