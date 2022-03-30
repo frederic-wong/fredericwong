@@ -15,8 +15,19 @@ require("@rails/activestorage").start()
 
 import 'bootstrap/dist/js/bootstrap'
 import "chartkick/chart.js"
+import Typed from 'typed.js';
+
 
 window.addEventListener('DOMContentLoaded', event => {
+    var options = {
+        strings: ["I'm a Software Engineer"],
+        typeSpeed: 100,
+        loop: true,
+        backSpeed: 50,
+        backDelay: 2000
+    };
+
+    var typed = new Typed('.typed', options);
 
     // Navbar shrink function
     var navbarShrink = function () {
@@ -37,15 +48,6 @@ window.addEventListener('DOMContentLoaded', event => {
 
     // Shrink the navbar when page is scrolled
     document.addEventListener('scroll', navbarShrink);
-
-    // Activate Bootstrap scrollspy on the main nav element
-    const mainNav = document.body.querySelector('#mainNav');
-    if (mainNav) {
-        new bootstrap.ScrollSpy(document.body, {
-            target: '#mainNav',
-            offset: 72,
-        });
-    };
 
     // Collapse responsive navbar when toggler is visible
     const navbarToggler = document.body.querySelector('.navbar-toggler');

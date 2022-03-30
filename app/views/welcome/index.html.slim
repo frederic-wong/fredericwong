@@ -1,4 +1,4 @@
-header class="masthead bg-primary text-white text-center"
+header class="masthead bg-primary text-white text-center" style="padding-top: 10%;"
   .container.d-flex.align-items-center.flex-column
     .masthead-avatar.mb-5
       = image_pack_tag 'fred.png', height: '90%', width: '90%'
@@ -8,7 +8,8 @@ header class="masthead bg-primary text-white text-center"
       .divider-custom-icon
         i class="fas fa-star"
       .divider-custom-line
-    p class="masthead-subheading font-weight-light mb-0" Software Engineer
+    p class="masthead-subheading font-weight-light mb-0" style="display: inline-block"
+      span class='typed'
 
 = render 'portfolio'
 = render 'about'
